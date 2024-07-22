@@ -21,7 +21,7 @@ import java.util.concurrent.ExecutionException;
 public class ProductController {
 
     private ProductService productService;
-    private static Logger logger = LoggerFactory.getLogger(ProductController.class);
+    private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
 
     @Autowired
     public ProductController(ProductService productService){

@@ -19,7 +19,7 @@ public class ProductServiceImpl implements ProductService {
 
     private KafkaTemplate<String, ProductCreatedEvent> kafkaTemplate;
 
-    private final Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
 
     @Autowired
     public ProductServiceImpl(KafkaTemplate<String, ProductCreatedEvent> kafkaTemplate) {
